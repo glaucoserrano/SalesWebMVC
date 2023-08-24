@@ -25,7 +25,7 @@ namespace SalesWebMVC.Models
         [Display(Name= "Salário")]
         [DisplayFormat(DataFormatString ="{0:F2}")]
         [Required(ErrorMessage = "{0} é obrigatório")]
-        [Range(100.0,5000.0,ErrorMessage ="{0} deve ser entre {1} e {2}")]
+        [Range(100.0,50000.0,ErrorMessage ="{0} deve ser entre {1} e {2}")]
         public double BaseSalary { get; set; }
         public Department Department { get; set; }
         [Display(Name ="Departamento")]
